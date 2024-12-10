@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll Anime</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(240, 98, 98);
+        min-height: 100vh;
+      }
+
+      #container {
+        width: 100%;
+        height: 100%;
+        overflow-y: scroll;
+        padding: 20px;
+        background-color: rgb(243, 81, 81);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px; /* Add spacing between boxes */
+      }
+
+      #container .box {
+        transition: 0.5s;
+      }
+
+      .box {
+        width: 430px;
+        height: 320px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        /* For inactive boxes (shrunk state) */
+        transform: scale(1.2);
+        transition: transform 0.3s ease;
+
+        gap: -15px; /* Add spacing between boxes */
+        background-color: rgb(243, 81, 81);
+        border-radius: 30px;
+        margin: 25px 0px;
+        border: 2px solid rgb(245, 200, 146);
+
+        /* for animation */
+        /* animation: anime linear;
+        animation-timeline: view();
+        animation-range: entry 0 cover 50%; */
+      }
+      .box1 {
+        width: 360px;
+        height: 200px;
+        align-items: center;
+        background-color: rgb(251, 143, 143);
+        border-radius: 30px;
+        margin: 13px 0px 5px 0px;
+        border: 2px solid rgb(245, 200, 146);
+      }
+
+      .avatar {
+        width: 55px;
+        height: 100px;
+        /* align-items: center; */
+        background-color: rgb(251, 143, 143);
+        border-radius: 90px;
+        margin: 1px 290px 5px 0px;
+        margin-bottom: -90px;
+        border: 2px solid rgb(245, 200, 146);
+      }
+      .box2 {
+        width: 260px;
+        height: 40px;
+        align-items: center;
+        background-color: rgb(251, 143, 143);
+        border-radius: 30px;
+        margin: 0px 0px 0px 100px;
+        border: 2px solid rgb(245, 200, 146);
+      }
+      .box3 {
+        width: 160px;
+        height: 20px;
+        align-items: center;
+        background-color: rgb(251, 143, 143);
+        border-radius: 30px;
+        margin: -15px 0px 0px 0px;
+        margin-bottom: 100px;
+        border: 2px solid rgb(245, 200, 146);
+      }
+      /* for animation */
+      /* @keyframes anime {
+        from {
+          opacity: 0;
+          scale: 0.5;
+        }
+
+        to {
+          opacity: 1;
+          scale: 1;
+        }
+      } */
+    </style>
+  </head>
+
+  <body>
+    <section id="container">
+      <div class="box">
+        <div class="box1"></div>
+        <div class="avatar"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+      </div>
+      <div class="box">
+        <div class="box1"></div>
+        <div class="avatar"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+      </div>
+      <div class="box">
+        <div class="box1"></div>
+        <div class="avatar"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+      </div>
+      <div class="box">
+        <div class="box1"></div>
+        <div class="avatar"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+      </div>
+      <div class="box">
+        <div class="box1"></div>
+        <div class="avatar"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+      </div>
+      <div class="box">
+        <div class="box1"></div>
+        <div class="avatar"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+      </div>
+      <div class="box">
+        <div class="box1"></div>
+        <div class="avatar"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+      </div>
+      <div class="box">
+        <div class="box1"></div>
+        <div class="avatar"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+      </div>
+      <div class="box">
+        <div class="box1"></div>
+        <div class="avatar"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+      </div>
+      <div class="box">
+        <div class="box1"></div>
+        <div class="avatar"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+      </div>
+      <div class="box">
+        <div class="box1"></div>
+        <div class="avatar"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+      </div>
+      <div class="box">
+        <div class="box1"></div>
+        <div class="avatar"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+      </div>
+      <div class="box">
+        <div class="box1"></div>
+        <div class="avatar"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+      </div>
+      <div class="box">
+        <div class="box1"></div>
+        <div class="avatar"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+      </div>
+      <div class="box">
+        <div class="box1"></div>
+        <div class="avatar"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
